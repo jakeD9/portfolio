@@ -1,110 +1,215 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 
 <head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <title>Duckworth</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/styles.css" media="screen">
-
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jake Duckworth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Carrois+Gothic+SC" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles.css">
+    <script src="assets/script.js"></script>
 </head>
 
 <body>
-  <!-- navbar -->
-  <nav class="navbar navbar-default">
-    <div class="container-fluid navbar-custom">
-      <!-- mobile collapse -->
-      <div class="row">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- name + logo img -->
-          <div class="col-xs-12 phone-nav">
-            <a class="navbar-brand" href="#" id="logo">
-              <img src="https://via.placeholder.com/70">
-              <p id="logoname">Jake Duckworth</p>
-            </a>
-          </div>
+    <!-- navigation/header -->
+    <header>
+        <div class="row">
+            <div class="col s12 valign-wrapper" id="banner">
+                <!-- logo group -->
+                <div id="logogroup" class="col s2 valign-wrapper" href="#">
+                    <img id="duck-icon" src="assets/img/duckicon.png">
+                    <h6>Jake</h6>
+                    <h6>Duckworth</h6>
+                </div>
+                <div class="col s6 valign"></div>
+                <!-- actual navigation -->
+                <div id="navgroup" class="col s4 right valign-wrapper">
+                    <ul id="nav-list" class="valign">
+                        <li class="left nav-item"><a href="#" class="hvr-underline-from-center">PORTFOLIO</a></li>
+                        <li class="left nav-item"><a href="#" class="hvr-underline-from-center">ABOUT</a></li>
+                        <li class="left nav-item"><a href="#" class="hvr-underline-from-center">CONTACT</a></li>
+                        <li class="left nav-item"><a href="#" class="hvr-underline-from-center">RESOURCES</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- intro content -->
+    <section id="intro">
+        <div class="row center">
+            <div class="col s12 valign-wrapper">
+                <div class="bg-img valign center"></div>
+                <!-- text blocks -->
+                <div class="container intro-content valign">
+                    <h1>Web Developer</h1>
+                    <h3>Full-Stack Suite Including:</h3>
+                    <ul class="list center">
+                        <li>
+                            <p>HTML/CSS</p>
+                        </li>
+                        <li>
+                            <p>JavaScript/jQuery</p>
+                        </li>
+                        <li>
+                            <p>Bootstrap</p>
+                        </li>
+                        <li>
+                            <p>React</p>
+                        </li>
+                    </ul>
+                    <ul class="list center">
+                        <li>
+                            <p>MySQL</p>
+                        </li>
+                        <li>
+                            <p>MongoDB</p>
+                        </li>
+                        <li>
+                            <p>NodeJS/Express</p>
+                        </li>
+                        <li>
+                            <p>RESTful APIs</p>
+                        </li>
+                    </ul>
+                    <div id="arrow-group">
+                        <p id="arrow-text">View my work!</p>
+                        <div class="arrow"><i class="fas fa-arrow-alt-circle-down"></i></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-        <!-- nav links -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right navbar-right-custom">
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="index.html">Blog</a></li>
-          </ul>
         </div>
-      </div>
-    </div>
-  </nav>
-  <!-- end navbar -->
+    </section>
+    <!-- portfolio grid -->
+    <main id="portfolio">
+        <div class="container">
+            <div class="row center">
+                <!-- Project 1 -->
+                <div class="col s4 valign-wrapper animated fadeInLeft">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Explore More</span>
+                            <img src="assets/img/explore.jpg">
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="port-link">Github</a>
+                            <a href="#" class="port-link">Demo</a>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- jumbotron intro -->
+                <!-- Project 2 -->
+                <div class="col s4 valign-wrapper animated fadeIn">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Beer Me</span>
+                            <img src="assets/img/beer.jpg">
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="port-link">Github</a>
+                            <a href="#" class="port-link">Demo</a>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container intro justify-content-center">
-        <h1 class="text-center">Full-Stack Web Developer</h1>
-        <p class="lead text-center">From the interface to the database</p>
-      </div>
-    </div>
+                <!-- Project 3 -->
+                <div class="col s4 valign-wrapper animated fadeInRight">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Marketwatch Scraper</span>
+                            <img src="assets/img/market.jpg">
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="port-link">Github</a>
+                            <a href="#" class="port-link">Demo</a>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- jumbotron intro end -->
+            </div>
 
-  <section id="portfolio-preview">
-    <div class="container">
-      <div class="row">
-        <div class="portfolio col-xs-6">
-            <a href="#"><img class="center-block" src="https://via.placeholder.com/300"></a>
-            <p class="center-block">Explore More</p>
+            <div class="row center">
+                <!-- Project 4 -->
+                <div class="col s4 offset-s2 valign-wrapper">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title ">ReactApp</span>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Molestiae, sequi obcaecati doloremque veniam
+                                earum aliquid ullam sint laborum illum totam dolore
+                                aperiam ducimus facilis tempora, eos ratione illo.
+                                Ab, suscipit!</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="port-link">Github</a>
+                            <a href="#" class="port-link">Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="col s4 valign-wrapper">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title ">Discord Bot</span>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Molestiae, sequi obcaecati doloremque veniam
+                                earum aliquid ullam sint laborum illum totam dolore
+                                aperiam ducimus facilis tempora, eos ratione illo.
+                                Ab, suscipit!</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#" class="port-link">Github</a>
+                            <a href="#" class="port-link">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="portfolio col-xs-6">
-            <a href="https://beer-me-project-2.herokuapp.com/"><img class="center-block" src="https://via.placeholder.com/300"></a>
-            Beer Me
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="row">
+            <div class="col s12 valign-wrapper" id="footer">
+                <!-- about me snippet -->
+                <div id="about-snip" class="col s3 valign left">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Molestiae, sequi obcaecati doloremque veniam
+                        earum aliquid ullam sint laborum
+                    </p>
+                </div>
+
+                <!-- social links -->
+                <div id="social-column" class="col s3 valign right">
+                    <ul class="right soc-links">
+                        <li>
+                            <i class="fab fa-github-square"></i>
+                            <a href="https://www.github.com/jakeD9/" target="_blank" class="hvr-underline-from-center">
+                                GITHUB
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/wduckworth/" target="_blank"
+                                class="hvr-underline-from-center">
+                                LINKEDIN
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
-      </div>
-
-      <div class="row">
-        <div class="portfolio col-xs-6">
-            <a href="#"><img class="center-block" src="https://via.placeholder.com/300"></a>
-            Project TBA
         </div>
-        <div class="portfolio col-xs-6">
-            <a href="#"><img class="center-block" src="https://via.placeholder.com/300"></a>
-            Project TBA
-        </div>
-      </div>
-    </div>
-  </section>
 
+    </footer>
 
-  <footer class="footer">
-    <div class="two-toned-footer-color"></div>
-    <p class="text-muted text-muted-footer text-center">
-      &copy; Footertext
-    </p>
-  </footer>
-  <!-- End of footer -->
-
-  <!-- jQuery CDN -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Bootstrap CDN -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
+    <!-- materialize js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
