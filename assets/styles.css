@@ -12,8 +12,10 @@ a, h6 {
     animation-fill-mode: both;
 }
 
-/* header styling */
 
+
+
+/* header styling */
 #banner {
     height: 90px;
     background-color: rgb(35, 111, 216);
@@ -46,6 +48,9 @@ a, h6 {
 .nav-item {
     padding-left: 10px;
 }
+
+
+
 
 /* hover.css underline effect */
 
@@ -88,6 +93,10 @@ a, h6 {
 #navgroup {
     margin-right: 200px;
 }
+
+
+
+
 
 /* intro content styling */
 
@@ -144,6 +153,10 @@ h1 {
         transform: translateY(-15px);
     }
 }
+
+
+
+
 
 /* portoflio styling */
 
@@ -244,6 +257,9 @@ h1 {
 .port-link {
     margin: 0;
 }
+
+
+
 
 /* footer styling */
 
