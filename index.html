@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton|Carrois+Gothic+SC" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/styles.css">
-    <script src="assets/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -22,24 +24,26 @@
                 <!-- logo group -->
                 <div id="logogroup" class="col s2 valign-wrapper" href="#">
                     <img id="duck-icon" src="assets/img/duckicon.png">
-                    <h6>Jake</h6>
-                    <h6>Duckworth</h6>
+                    <div>
+                        <h6 class="namegroup" id="firstname">Jake</h6>
+                        <h6 class="namegroup">Duckworth</h6>
+                    </div>
                 </div>
                 <div class="col s6 valign"></div>
                 <!-- actual navigation -->
                 <div id="navgroup" class="col s4 right valign-wrapper">
                     <ul id="nav-list" class="valign">
                         <li class="left nav-item">
-                            <a href="#" class="hvr-underline-from-center">PORTFOLIO</a>
+                            <a href="/index.html" class="hvr-underline-from-center">PORTFOLIO</a>
                         </li>
                         <li class="left nav-item">
-                            <a href="#" class="hvr-underline-from-center">ABOUT</a>
+                            <a href="about.html" class="hvr-underline-from-center">ABOUT</a>
                         </li>
                         <li class="left nav-item">
-                            <a href="#" class="hvr-underline-from-center">CONTACT</a>
+                            <a href="#" class="hvr-underline-from-center">RESUME</a>
                         </li>
                         <li class="left nav-item">
-                            <a href="#" class="hvr-underline-from-center">RESOURCES</a>
+                            <a href="resources.html" class="hvr-underline-from-center">RESOURCES</a>
                         </li>
                     </ul>
                 </div>
@@ -99,42 +103,45 @@
         <div class="container">
             <div class="row center">
                 <!-- Project 1 -->
-                <div class="col s4 valign-wrapper animated fadeInLeft">
-                    <div class="card">
+                <div class="col s4 valign-wrapper" data-aos="fade-right" data-aos-duration="2700">
+                    <div class="card hoverable">
                         <div class="card-content">
                             <span class="card-title">Explore More</span>
                             <img src="assets/img/explore.jpg">
                         </div>
                         <div class="card-action">
-                            <a href="#" class="port-link">Github</a>
-                            <a href="#" class="port-link">Demo</a>
+                            <a href="https://github.com/setheugene/explore-more" target="_blank"
+                                class="port-link">GitHub</a>
+                            <a href="https://setheugene.github.io/explore-more/" target="_blank"
+                                class="port-link">Demo</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="col s4 valign-wrapper animated fadeIn">
-                    <div class="card">
+                <div class="col s4 valign-wrapper" data-aos="zoom-in" data-aos-duration="2700">
+                    <div class="card hoverable">
                         <div class="card-content">
                             <span class="card-title">Beer Me</span>
                             <img src="assets/img/beer.jpg">
                         </div>
                         <div class="card-action">
-                            <a href="#" class="port-link">Github</a>
-                            <a href="#" class="port-link">Demo</a>
+                            <a href="https://github.com/jakeD9/beer-me" target="_blank" class="port-link">GitHub</a>
+                            <a href="https://beer-me-project-2.herokuapp.com/" target="_blank"
+                                class="port-link">Demo</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 3 -->
-                <div class="col s4 valign-wrapper animated fadeInRight">
-                    <div class="card">
+                <div class="col s4 valign-wrapper" data-aos="fade-left" data-aos-duration="2700">
+                    <div class="card hoverable">
                         <div class="card-content">
                             <span class="card-title">Marketwatch Scraper</span>
                             <img src="assets/img/market.jpg">
                         </div>
                         <div class="card-action">
-                            <a href="#" class="port-link">Github</a>
+                            <a href="https://github.com/jakeD9/mongoscrape" target="_blank" class="port-link">GitHub</a>
                             <a href="#" class="port-link">Demo</a>
                         </div>
                     </div>
@@ -144,15 +151,11 @@
 
             <div class="row center">
                 <!-- Project 4 -->
-                <div class="col s4 offset-s2 valign-wrapper">
-                    <div class="card">
+                <div class="col s4 offset-s2 valign-wrapper" data-aos="fade-right" data-aos-duration="2700">
+                    <div class="card hoverable">
                         <div class="card-content">
                             <span class="card-title ">ReactApp</span>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
-                                elit. Molestiae, sequi obcaecati doloremque veniam
-                                earum aliquid ullam sint laborum illum totam dolore
-                                aperiam ducimus facilis tempora, eos ratione illo.
-                                Ab, suscipit!</p>
+                            <img src="assets/img/soon.jpg">
                         </div>
                         <div class="card-action">
                             <a href="#" class="port-link">Github</a>
@@ -161,15 +164,11 @@
                     </div>
                 </div>
                 <!-- Project 5 -->
-                <div class="col s4 valign-wrapper">
-                    <div class="card">
+                <div class="col s4 valign-wrapper" data-aos="fade-left" data-aos-duration="2700">
+                    <div class="card hoverable">
                         <div class="card-content">
                             <span class="card-title ">Discord Bot</span>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing
-                                elit. Molestiae, sequi obcaecati doloremque veniam
-                                earum aliquid ullam sint laborum illum totam dolore
-                                aperiam ducimus facilis tempora, eos ratione illo.
-                                Ab, suscipit!</p>
+                            <img src="assets/img/soon.jpg">
                         </div>
                         <div class="card-action">
                             <a href="#" class="port-link">Github</a>
@@ -186,27 +185,36 @@
             <div class="col s12 valign-wrapper" id="footer">
                 <!-- about me snippet -->
                 <div id="about-snip" class="col s3 valign left">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Molestiae, sequi obcaecati doloremque veniam
-                        earum aliquid ullam sint laborum
+                    <p>Thanks for taking an interest in my site, and my work. I'm an aspiring developer
+                        looking for a fresh start in a brand new career path. If you see something you like,
+                        or just want to say hi, please don't hesitate to reach out to me using the links over to
+                        the right.
                     </p>
+                    <p id="cr">&copy;Copyright 2019</p>
                 </div>
 
                 <!-- social links -->
                 <div id="social-column" class="col s3 valign right">
                     <ul class="right soc-links">
                         <li>
-                            <i class="fab fa-github-square"></i>
                             <a href="https://www.github.com/jakeD9/" target="_blank" class="hvr-underline-from-center">
                                 GITHUB
                             </a>
+                            <i class="fab fa-github-square"></i>
                         </li>
                         <li>
-                            <i class="fab fa-linkedin"></i>
                             <a href="https://www.linkedin.com/in/wduckworth/" target="_blank"
                                 class="hvr-underline-from-center">
                                 LINKEDIN
                             </a>
+                            <i class="fab fa-linkedin"></i>
+                        </li>
+                        <li>
+                            <a href="mailto: jake.duckworth@gmail.com" target="_blank"
+                                class="hvr-underline-from-center">
+                                JAKE.DUCKWORTH@GMAIL.COM
+                            </a>
+                            <i class="fas fa-at"></i>
                         </li>
                     </ul>
                 </div>
@@ -219,6 +227,13 @@
 
     <!-- materialize js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/script.js"></script>
+
+    <script>
+        AOS.init()
+    </script>
+
 </body>
 
 </html>
