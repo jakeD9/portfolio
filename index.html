@@ -1,248 +1,321 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Jake Duckworth</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- bootstrap/jquery -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- animate on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Carrois+Gothic+SC" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body>
-    <!-- navigation/header -->
-    <header>
-        <div class="row">
-            <div class="col s12 valign-wrapper" id="banner">
-                <!-- logo group -->
-                <div id="logogroup" class="col s2 valign-wrapper" href="#">
-                    <img id="duck-icon" src="assets/img/duckicon.png">
-                    <div>
-                        <h6 class="namegroup" id="firstname">Jake</h6>
-                        <h6 class="namegroup">Duckworth</h6>
-                    </div>
-                </div>
-                <div class="col s6 valign"></div>
-                <!-- actual navigation -->
-                <div id="navgroup" class="col s4 right valign-wrapper">
-                    <ul id="nav-list" class="valign">
-                        <li class="left nav-item">
-                            <a href="/index.html" class="hvr-underline-from-center">PORTFOLIO</a>
-                        </li>
-                        <li class="left nav-item">
-                            <a href="about.html" class="hvr-underline-from-center">ABOUT</a>
-                        </li>
-                        <li class="left nav-item">
-                            <a href="https://docs.google.com/document/d/10WAO_0h1-InVpWqgK9Ode88nx6ei8Vvul1nmD2HkSYU/edit?usp=sharing"
-                                class="hvr-underline-from-center">RESUME</a>
-                        </li>
-                        <li class="left nav-item">
-                            <a href="resources.html" class="hvr-underline-from-center">RESOURCES</a>
-                        </li>
-                    </ul>
+<body id="top">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 navbar-scrolled" id="navbar">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#top">Jake Duckworth</a>
+            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="border-color:grey;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger hvr-underline-from-center" id="about-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger hvr-underline-from-center" id="portfolio-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger hvr-underline-from-center" id="skill-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger hvr-underline-from-center" id="contact-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger hvr-underline-from-center" href="https://github.com/jakeD9"
+                            target="_blank">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger hvr-underline-from-center"
+                            href="https://docs.google.com/document/d/10WAO_0h1-InVpWqgK9Ode88nx6ei8Vvul1nmD2HkSYU/edit?usp=sharing"
+                            target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header class="head" id="#head">
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-10 text-center">
+                    <h2>Welcome to my site!</h2>
+                    <h3>I'm Jake, a full stack web developer in the Kansas City area.</h3>
                 </div>
             </div>
+        </div>
         </div>
     </header>
-    <!-- intro content -->
-    <section id="intro">
-        <div class="row center">
-            <div class="col s12 valign-wrapper">
-                <div class="bg-img valign center"></div>
-                <!-- text blocks -->
-                <div class="container intro-content valign">
-                    <h1>Web Developer</h1>
-                    <h3>Full-Stack Suite Including:</h3>
-                    <ul class="list center">
-                        <li>
-                            <p>HTML/CSS</p>
-                        </li>
-                        <li>
-                            <p>JavaScript/jQuery</p>
-                        </li>
-                        <li>
-                            <p>Bootstrap</p>
-                        </li>
-                        <li>
-                            <p>React</p>
-                        </li>
-                    </ul>
-                    <ul class="list center">
-                        <li>
-                            <p>MySQL</p>
-                        </li>
-                        <li>
-                            <p>MongoDB</p>
-                        </li>
-                        <li>
-                            <p>NodeJS/Express</p>
-                        </li>
-                        <li>
-                            <p>RESTful APIs</p>
-                        </li>
-                    </ul>
-                    <div id="arrow-group">
-                        <p id="arrow-text">View my work!</p>
-                        <div class="arrow"><i class="fas fa-arrow-alt-circle-down"></i></div>
-                    </div>
+    <!-- about -->
+    <section id="about">
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="col-lg-8 text-center">
+                    <p>
+                        I'm an aspiring developer looking to make a career change. I've always had a knack for
+                        technology, but as that technology becomes more engrained in our every day lives, I decided
+                        I want to be on the forefront of it. My background in finance has led me to be very numbers
+                        oriented, and my sales experience has led me down a path to make things as easy as possible
+                        for the people I'm able to serve. Where this new path will take me, I can't say for sure yet.
+                        But I do know that with enough lines of code, anything is possible.
+                    </p>
+                    <br>
+                    <h4>So let's make something great.</h4>
                 </div>
             </div>
-
-        </div>
-
         </div>
     </section>
-    <!-- portfolio grid -->
-    <main id="portfolio">
+    <!-- portfolio -->
+    <section id="portfolio">
         <div class="container">
-            <div class="row center">
-                <!-- Project 1 -->
-
-                <div class="col s4 valign-wrapper" data-aos="fade-right" data-aos-duration="2700">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title ">Opendoor React CRM</span>
-                            <img src="assets/img/door.jpeg">
-                        </div>
-                        <div class="card-action">
-                            <a href="https://github.com/setheugene/opendoor" class="port-link"
-                                target="_blank">Github</a>
-                            <a href="https://evening-savannah-32872.herokuapp.com/" class="port-link"
-                                target="_blank">Demo</a>
-                        </div>
+            <h2 id="portfolio-title" class="text-center">Portfolio Projects</h2>
+            <!-- row 1 -->
+            <div class="row port-one" data-aos="fade-right" data-aos-duration="2700">
+                <!-- proj1 -->
+                <div class="col-lg-4 col-sm-6 col-md-6 card">
+                    <div class="card-body">
+                        <p class="card-text text-center">OpenDoor CRM</p>
+                    </div>
+                    <img class="port-img mx-auto" src="./assets/img/door.jpeg">
+                    <div class="card-body text-center">
+                        <a href="https://github.com/setheugene/opendoor" target="_blank" class="card-link hvr-underline-from-center">GitHub</a>
+                        <a href="https://evening-savannah-32872.herokuapp.com/" target="_blank" class="card-link hvr-underline-from-center">Demo</a>
                     </div>
                 </div>
-
-                <!-- Project 2 -->
-
-                <div class="col s4 valign-wrapper" data-aos="zoom-in" data-aos-duration="2700">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title ">Discord Bot</span>
-                            <img src="assets/img/discord.jpg">
-                        </div>
-                        <div class="card-action">
-                            <a href="https://github.com/jakeD9/monobot" class="port-link" target="_blank">Github</a>
-                            <a href="#" class="port-link"><s>No Demo</s></a>
-                        </div>
+                <!-- proj2 -->
+                <div class="col-lg-4 col-sm-6 col-md-6 card">
+                    <div class="card-body">
+                        <p class="card-text text-center">MonoBot</p>
+                    </div>
+                    <img class="port-img mx-auto" src="./assets/img/discord.jpg">
+                    <div class="card-body text-center">
+                        <a href="https://github.com/jakeD9/monobot" target="_blank" class="card-link hvr-underline-from-center">GitHub</a>
+                        <a href="#!" class="card-link hvr-underline-from-center"><s>No Demo</s></a>
                     </div>
                 </div>
-                <!-- Project 3 -->
-
-                <div class="col s4 valign-wrapper" data-aos="fade-left" data-aos-duration="2700">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title">LIRI CLI</span>
-                            <img src="assets/img/vinyl.jpeg">
-                        </div>
-                        <div class="card-action">
-                            <a href="https://github.com/jakeD9/liri-node-app" target="_blank" class="port-link">GitHub</a>
-                            <a href="#" class="port-link"><s>No Demo</s></a>
-                        </div>
+                <!-- proj3 -->
+                <div class="col-lg-4 col-sm-6 col-md-6 card">
+                    <div class="card-body">
+                        <p class="card-text text-center">Beer Me</p>
+                    </div>
+                    <img class="port-img mx-auto" src="./assets/img/beer.jpg">
+                    <div class="card-body text-center">
+                        <a href="https://github.com/jakeD9/beer-me" target="_blank" class="card-link hvr-underline-from-center">GitHub</a>
+                        <a href="https://beer-me-project-2.herokuapp.com/" target="_blank" class="card-link hvr-underline-from-center">Demo</a>
                     </div>
                 </div>
 
             </div>
-
-            <div class="row center">
-
-                <!-- Project 4 -->
-                <div class="col s4 offset-s2 valign-wrapper" data-aos="fade-right" data-aos-duration="2700">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title">Explore More</span>
-                            <img src="assets/img/explore.jpg">
-                        </div>
-                        <div class="card-action">
-                            <a href="https://github.com/setheugene/explore-more" target="_blank"
-                                class="port-link">GitHub</a>
-                            <a href="https://setheugene.github.io/explore-more/" target="_blank"
-                                class="port-link">Demo</a>
-                        </div>
-
+            <!-- row 2 -->
+            <div class="row port-two" data-aos="fade-left" data-aos-duration="2700">
+                <!-- proj4 -->
+                <div class="col-lg-4 col-sm-6 col-md-6 card">
+                    <div class="card-body">
+                        <p class="card-text text-center">Explore More</p>
+                    </div>
+                    <img class="port-img mx-auto" src="./assets/img/explore.jpg">
+                    <div class="card-body text-center">
+                        <a href="https://github.com/setheugene/explore-more" target="_blank" class="card-link hvr-underline-from-center">GitHub</a>
+                        <a href="https://setheugene.github.io/explore-more/"  target="_blank" class="card-link hvr-underline-from-center">Demo</a>
                     </div>
                 </div>
-
-                <!-- Project 5 -->
-                <div class="col s4 valign-wrapper" data-aos="fade-left" data-aos-duration="2700">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <span class="card-title">Beer Me</span>
-                            <img src="assets/img/beer.jpg">
-                        </div>
-                        <div class="card-action">
-                            <a href="https://github.com/jakeD9/beer-me" target="_blank" class="port-link">GitHub</a>
-                            <a href="https://beer-me-project-2.herokuapp.com/" target="_blank"
-                                class="port-link">Demo</a>
-                        </div>
+                <!-- proj5 -->
+                <div class="col-lg-4 col-sm-6 col-md-6 card">
+                    <div class="card-body">
+                        <p class="card-text text-center">LIRI CLI</p>
+                    </div>
+                    <img class="port-img mx-auto" src="./assets/img/vinyl.jpeg">
+                    <div class="card-body text-center">
+                        <a href="https://github.com/jakeD9/liri-node-app" target="_blank" class="card-link hvr-underline-from-center">GitHub</a>
+                        <a href="https://drive.google.com/file/d/1c5mUKGX1GQrAe9K8aWKs7XvMgSIdk3-j/view?usp=sharing" target="_blank" class="card-link hvr-underline-from-center">Demo</a>
                     </div>
                 </div>
-
+                <!-- proj6 -->
+                <div class="col-lg-4 col-sm-6 col-md-6 card">
+                    <div class="card-body">
+                        <p class="card-text text-center">Bamazon</p>
+                    </div>
+                    <img class="port-img mx-auto" src="./assets/img/bamazon.jpg">
+                    <div class="card-body text-center">
+                        <a href="https://github.com/jakeD9/bamazon-app" target="_blank" class="card-link hvr-underline-from-center">GitHub</a>
+                        <a href="https://drive.google.com/file/d/1FPbYte5s_VW4o1jbNcvTxhQcCYzjBShu/view?usp=sharing" target="_blank" class="card-link hvr-underline-from-center">Demo</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
-    <!-- footer -->
-    <footer>
-        <div class="row">
-            <div class="col s12 valign-wrapper" id="footer">
-                <!-- about me snippet -->
-                <div id="about-snip" class="col s3 valign left">
-                    <p>Thanks for taking an interest in my site, and my work. I'm an aspiring developer
-                        looking for a fresh start in a brand new career path. If you see something you like,
-                        or just want to say hi, please don't hesitate to reach out to me using the links over to
-                        the right.
-                    </p>
-                    <p id="cr">&copy;Copyright 2019</p>
+    </section>
+    <!-- skills -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="text-center" id="skills-title">Technologies and Skills</h2>
+            <!-- row 1 -->
+            <div class="row first-row-skills" data-aos="fade-up" data-aos-duration="2700">
+                <div class="col-lg-2 col-md-4 text-center">
+                    <div>
+                        <img class="porticon" src="assets/img/icons/html5.png">
+                        <h4>HTML5</h4>
+                    </div>
                 </div>
+                <div class="col-lg-2 col-md-4 text-center">
+                    <div>
+                        <img class="porticon" src="assets/img/icons/css3.png">
+                        <h4>CSS</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 text-center">
+                    <div>
+                        <img class="porticon" src="assets/img/icons/bstrap.png">
+                        <h4>Bootstrap</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 text-center">
+                    <div>
+                        <img class="porticon" src="assets/img/icons/js.png">
+                        <h4>JavaScript</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 text-center">
+                    <div>
+                        <img class="porticon" src="assets/img/icons/jquery.png">
+                        <h4>jQuery</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 text-center">
+                    <div>
+                        <img class="porticon" src="assets/img/icons/reactjs.png">
+                        <h4>React</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- row 2 -->
+            <div class="row second-row-skills" data-aos="fade-up" data-aos-duration="2700">
+                <div class="col-lg-2 col-md-4 text-center">
+                    <div>
+                        <img class="porticon" src="assets/img/icons/node.png">
+                        <h4>Node.js</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 text-center">
+                    <div>
+                        <img class="porticon" src="assets/img/icons/restapi.png">
+                        <h4>RESTful API</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 text-center">
+                    <div>
+                        <img class="porticon" src="assets/img/icons/mysql.png">
+                        <h4>MySQL</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 text-center">
+                    <div>
+                        <img class="porticon" src="assets/img/icons/mongo.png">
+                        <h4>MongoDB</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 text-center">
+                    <div>
+                        <img class="porticon" src="assets/img/icons/firebase.png">
+                        <h4>Firebase</h4>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 text-center">
+                    <div>
+                        <img class="porticon" src="assets/img/icons/python.png">
+                        <h4>Python</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <!-- social links -->
-                <div id="social-column" class="col s3 valign right">
-                    <ul class="right soc-links">
+    </section>
+    <!-- footer/contact -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6" id="about-small">
+                    <img class="float-left" id="headsnip" src="assets/img/portshot.jpg">
+                    <p id="about-snip">Thanks for taking an interest in my site, and my work. I'm an aspiring developer
+                        looking for a fresh
+                        start in a new career path. There's a lot for me to learn out there still, but I'm confident in
+                        my
+                        ability to make something special. If you see something you like, or just want to say hi, please
+                        don't
+                        hesitate to reach out to me using the links over to the right.
+                    </p>
+                    <p>&copy; Copyright 2019</p>
+                </div>
+                <div class="col-lg-5 col-md-6 ml-auto">
+                    <ul style="list-style: none" class="float-right">
                         <li>
-                            <a href="https://www.github.com/jakeD9/" target="_blank" class="hvr-underline-from-center">
-                                GITHUB
-                            </a>
-                            <i class="fab fa-github-square"></i>
+                            <div class="float-right soc">
+                                <a href="https://www.linkedin.com/in/wduckworth/" target="_blank">
+                                    <h5 class="float-left hvr-underline-from-center">LinkedIn</h5>
+                                </a>
+                                <i class="fab fa-linkedin fa-3x"></i>
+                            </div>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/wduckworth/" target="_blank"
-                                class="hvr-underline-from-center">
-                                LINKEDIN
-                            </a>
-                            <i class="fab fa-linkedin"></i>
+                            <div class="float-right soc">
+                                <a href="https://github.com/jakeD9" target="_blank">
+                                    <h5 class="float-left hvr-underline-from-center">GitHub</h5>
+                                </a>
+                                <i class="fab fa-github-square fa-3x"></i>
+                            </div>
                         </li>
                         <li>
-                            <a href="mailto: jake.duckworth@gmail.com" target="_blank"
-                                class="hvr-underline-from-center">
-                                JAKE.DUCKWORTH@GMAIL.COM
-                            </a>
-                            <i class="fas fa-at"></i>
+                            <div class="float-right soc">
+                                <a href="mailto:jake.duckworth@gmail.com">
+                                    <h5 class="float-left hvr-underline-from-center">Email</h5>
+                                </a>
+                                <i class="fas fa-envelope-square fa-3x"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="float-right soc">
+                                <h5 class="float-left">573-814-9106</h5>
+                                <i class="fas fa-phone-square fa-3x"></i>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
-
         </div>
-        </div>
-
     </footer>
 
-    <!-- materialize js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/script.js"></script>
-
-    <script>
-        AOS.init()
-    </script>
-
+    <script>AOS.init()</script>
 </body>
 
 </html>

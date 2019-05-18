@@ -1,0 +1,169 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* hover.css underline */
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: black;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+/* nav styling */
+nav {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
+.navbar {
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.navbar.gradient {
+    background: linear-gradient(305deg, #FF595E, #FFBE6C, #96BC3C, #0188A4, #FB6107, #9FD8CB);
+    background-size: 600% 600%;
+    animation: Animate3 60s ease infinite;
+    flex: 1 0 auto;
+    transition: 1s ease 0s;
+}
+
+/* header styling */
+.head {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    height: 600px;
+    background: linear-gradient(305deg, #FF595E, #FFBE6C, #96BC3C, #0188A4, #FB6107, #9FD8CB);
+    background-size: 600% 600%;
+    animation: Animate3 60s ease infinite;
+    flex: 1 0 auto;
+}
+
+@keyframes Animate3 { 
+    0%{background-position:0% 41%}
+    50%{background-position:100% 60%}
+    100%{background-position:0% 41%}
+}
+
+/* about styling */
+#about {
+    background: #FFBE6C;
+    height: 450px;
+}
+
+
+/* portfolio styling */
+#portfolio {
+    padding-top: 80px;
+    height: 860px;
+}
+
+#portfolio-title {
+    padding-bottom: 20px;
+}
+
+.port-one {
+    margin-bottom: 10px;
+}
+
+.port-two {
+    margin-top: 10px;
+}
+
+.card-text {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
+.port-img {
+    max-height: 100%;
+    max-width: 100%;
+    height: 220px;
+    width: 250px;
+}
+
+.card-link {
+    color: #FFBE6C;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
+/* skill styling */
+#skills {
+    padding-top: 80px;
+}
+
+#skills-title {
+    padding-bottom: 30px;
+}
+
+.first-row-skills {
+    margin-bottom: 20px;
+}
+
+.porticon {
+    max-width: 90px;
+    max-height: 90px;
+    margin-bottom: 10px;
+}
+
+/* footer styling */
+footer {
+    margin-top: 100px;
+    background: #FFBE6C
+}
+
+#headsnip {
+    max-width: 100%;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 60%;
+}
+
+#about-small {
+    margin-top: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+i {
+    color: #0188A4;
+    padding-left: 15px;
+}
+
+h5 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-top: 8px;
+    color: #0188A4
+}
+
