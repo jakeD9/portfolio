@@ -49,7 +49,7 @@ nav {
     transition: all 1s ease-out;
 }
 
-.navbar.gradient {
+#navbar.gradient {
     background: linear-gradient(305deg, #FF595E, #FFBE6C, #96BC3C, #0188A4, #FB6107, #9FD8CB);
     background-size: 600% 600%;
     animation: Animate3 60s ease infinite;
