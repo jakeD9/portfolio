@@ -1,4 +1,4 @@
-$(document).ready(function() {
+    $(document).ready(function() {
     $(".side-nav__link").on("click", (event) => {
         let currentId = $(event.currentTarget).attr('id');
         let targetId = currentId.split("-")[1];
@@ -17,18 +17,22 @@ $(document).ready(function() {
     }).then((data) => {
         let currentTrack = data[0];
         let artist = currentTrack.artist['#text'];
-        let nowPlaying = currentTrack['@attr'].nowplaying;
+        // let nowPlaying = currentTrack['@attr'].nowplaying;
         let songName = currentTrack.name;
         let albumUrl = currentTrack.image[2]['#text'];
 
         $("#scrobbleTrack").text(`${songName} by ${artist}`)
         $("#scrobbleAlbum").attr("src", `${albumUrl}`)
         
-        if (nowPlaying = true) {
+        if (!currentTrack['@attr']) {
+            $("#nowPlaying").text("I recently listened to:")
+            return
+        }
+        
+        if (currentTrack['@attr'].nowplaying = true) {
             $("#nowPlaying").text("I'm currently listening to:")
             $("#scrobbleIcon").addClass("scrobble__icon--nowplaying")
-        } else {
-            $("#nowPlaying").text("I recently listened to:")
+            return
         }
 
     })
