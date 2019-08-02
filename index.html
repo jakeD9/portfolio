@@ -9,377 +9,517 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Jake Duckworth</title>
-    <meta name="description" content="">
+    <title>Jake Duckworth &mdash; Full Stack Web Developer</title>
+    <meta name="Portfolio" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <!-- bootstrap/jquery -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- animate on scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- custom css -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body id="top">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 navbar-scrolled" id="navbar">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#top">Jake Duckworth</a>
-            <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" style="border-color:grey;"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto my-2 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger hvr-underline-from-center" id="about-link"
-                            href="#about">About</a>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="assets/img/duck.png" alt="duck logo" class="logo">
+
+            <div class="name">
+                <h3 class="name__first">Jake</h3>
+                <h3 class="name__second">Duckworth</h3>
+            </div>
+            <div class="scrobble">
+                <img src="https://via.placeholder.com/150" alt="album art" class="scrobble__album" id="scrobbleAlbum">
+                <div class="scrobble__text">
+                    <span class="scrobble__small" id="nowPlaying">I'm currently listening to:</span>
+                    <div class="scrobble__track" id="scrobbleTrack"></div>
+                </div>
+                <a href="https://open.spotify.com/user/1264639257?si=23Ffp2ZJSJatHOAKcCNZtA" target="_blank" id="scrobbleLink">
+                    <svg class="scrobble__icon" id="scrobbeIcon">
+                        <use xlink:href="assets/img/symbol-defs.svg#icon-spotify"></use>
+                    </svg>
+                </a>
+
+            </div>
+            <div class="tagline">&lt;Full Stack Web Developer/&gt;</div>
+        </header>
+
+
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link" id="nav-portfolio">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="assets/img/symbol-defs.svg#icon-laptop"></use>
+                            </svg>
+                            <span>Portfolio</span>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger hvr-underline-from-center" id="portfolio-link"
-                            href="#portfolio">Portfolio</a>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link" id="nav-about">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="assets/img/symbol-defs.svg#icon-user"></use>
+                            </svg>
+                            <span>About</span>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger hvr-underline-from-center" id="skill-link"
-                            href="#skills">Skills</a>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link" id="nav-skills">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="assets/img/symbol-defs.svg#icon-check"></use>
+                            </svg>
+                            <span>Skills</span>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger hvr-underline-from-center" id="contact-link"
-                            href="#contact">Contact</a>
+                    <li class="side-nav__item">
+                        <a href="https://docs.google.com/document/d/1KewudUReovHhBRGZOM4zyVbdPcjADsb_izKY-S96CKs/edit?usp=sharing"
+                            target="_blank" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="assets/img/symbol-defs.svg#icon-text-document-inverted"></use>
+                            </svg>
+                            <span>Resume</span>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger hvr-underline-from-center" href="https://github.com/jakeD9"
-                            target="_blank">GitHub</a>
+                    <li class="side-nav__item">
+                        <a href="https://github.com/jakeD9" target="_blank" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="assets/img/symbol-defs.svg#icon-github"></use>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger hvr-underline-from-center"
-                            href="https://docs.google.com/document/d/1KewudUReovHhBRGZOM4zyVbdPcjADsb_izKY-S96CKs/edit?usp=sharing"
-                            target="_blank">Resume</a>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link" id="nav-contact">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="assets/img/symbol-defs.svg#icon-chat"></use>
+                            </svg>
+                            <span>Contact</span>
+                        </a>
                     </li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- header -->
-    <header class="head" id="#head">
-        <div class="container h-100">
-            <div class="row h-100 justify-content-center align-items-center">
-                <div class="col-lg-10 text-center">
-                    <h2>Welcome to my site!</h2>
-                    <h3>I'm Jake, a full stack web developer in the Kansas City area.</h3>
-                </div>
-            </div>
-        </div>
-        </div>
-    </header>
-    <!-- about -->
-    <section id="about">
-        <div class="container h-100">
-            <div class="row h-100 justify-content-center align-items-center">
-                <div class="col-lg-8 text-center">
-                    <p>
-                        I'm an aspiring developer looking to make a career change. I've always had a knack for
-                        technology, but as that technology becomes more engrained in our every day lives, I decided
-                        I want to be on the forefront of it. My background in finance has led me to be very numbers
-                        oriented, and my sales experience has given me the drive to make things as easy as possible
-                        for the people I'm able to serve. While hunting for my first entry level opportunity, I'm refactoring
-                        a lot of my older projects and making some new ones using the new technologies I've been learning.
-                    </p>
+
+                <div class="reference">
+                    Last Update: 08/01/2019
                     <br>
-                    <h4>So let's make something great.</h4>
+                    Icons provided by IcoMoon
+                    <br>
+                    &copy; 2019
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- portfolio -->
-    <section id="portfolio" class="h-100">
-        <div class="container">
-            <h2 id="portfolio-title" class="text-center">Portfolio Projects</h2>
-            <!-- row 1 -->
-            <div class="row port-one" data-aos="fade-right" data-aos-duration="2700">
-                <!-- proj1 -->
-                <div class="col-lg-4 col-sm-6 col-md-6 col-sm-1 card">
-                    <div class="card-body">
-                        <p class="card-text text-center">OpenDoor CRM</p>
-                    </div>
-                    <div class="hovereffect">
-                        <img class="port-img mx-auto" src="./assets/img/door.jpeg">
-                        <div class="overlay">
-                            <div class="text text-center">
-                                <p>A CRM for small property owners.</p>
-                                <p>React, MySQL, Node.js, Firebase Authentication</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body text-center">
-                        <a href="https://github.com/setheugene/opendoor" target="_blank"
-                            class="card-link hvr-underline-from-center">GitHub</a>
-                        <a href="https://evening-savannah-32872.herokuapp.com/" target="_blank"
-                            class="card-link hvr-underline-from-center">Demo</a>
-                    </div>
-                </div>
-                <!-- proj2 -->
-                <div class="col-lg-4 col-sm-6 col-md-6 col-sm-1 card">
-                    <div class="card-body">
-                        <p class="card-text text-center">MonoBot</p>
-                    </div>
-                    <div class="hovereffect">
-                        <img class="port-img mx-auto" src="./assets/img/discord.jpg">
-                        <div class="overlay">
-                            <div class="text text-center">
-                                <p>A Discord bot tied to Google Sheets.</p>
-                                <p>JavaScript, Discord API, Node.js, Google Scripts</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body text-center">
-                        <a href="https://github.com/jakeD9/monobot" target="_blank"
-                            class="card-link hvr-underline-from-center">GitHub</a>
-                        <a href="#!" class="card-link hvr-underline-from-center"><s>No Demo</s></a>
-                    </div>
-                </div>
-                <!-- proj3 -->
-                <div class="col-lg-4 col-sm-6 col-md-6 card col-sm-1">
-                    <div class="card-body">
-                        <p class="card-text text-center">Beer Me</p>
-                    </div>
-                    <div class="hovereffect">
-                        <img class="port-img mx-auto" src="./assets/img/beer.jpg">
-                        <div class="overlay">
-                            <div class="text text-center">
-                                <p>Save your favorite beers to a list you can reference later.</p>
-                                <p>Bootstrap, MySQL, Node.js, Firebase</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body text-center">
-                        <a href="https://github.com/jakeD9/beer-me" target="_blank"
-                            class="card-link hvr-underline-from-center">GitHub</a>
-                        <a href="https://beer-me-project-2.herokuapp.com/" target="_blank"
-                            class="card-link hvr-underline-from-center">Demo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- row 2 -->
-        <div class="container">
-            <div class="row port-two" data-aos="fade-left" data-aos-duration="2700">
-                <!-- proj4 -->
-                <div class="col-lg-4 col-sm-6 col-md-6 col-sm-1 card">
-                    <div class="card-body">
-                        <p class="card-text text-center">Explore More</p>
-                    </div>
-                    <div class="hovereffect">
-                        <img class="port-img mx-auto" src="./assets/img/explore.jpg">
-                        <div class="overlay">
-                            <div class="text text-center">
-                                <p>Single page app to prepare for your impromptu trip.</p>
-                                <p>Sass, CSS, jQuery, multiple APIs</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body text-center">
-                        <a href="https://github.com/jakeD9/explore-more" target="_blank"
-                            class="card-link hvr-underline-from-center">GitHub</a>
-                        <a href="https://jaked9.github.io/explore-more/" target="_blank"
-                            class="card-link hvr-underline-from-center">Demo</a>
-                    </div>
-                </div>
-                <!-- proj5 -->
-                <div class="col-lg-4 col-sm-6 col-md-6 col-sm-1 card">
-                    <div class="card-body">
-                        <p class="card-text text-center">LIRI CLI</p>
-                    </div>
-                    <div class="hovereffect">
-                        <img class="port-img mx-auto" src="./assets/img/vinyl.jpeg">
-                        <div class="overlay">
-                            <div class="text text-center">
-                                <p>Command line app to search for music and movie information.</p>
-                                <p>Node.js, Spotify, OMDB, Bandsintown</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body text-center">
-                        <a href="https://github.com/jakeD9/liri-node-app" target="_blank"
-                            class="card-link hvr-underline-from-center">GitHub</a>
-                        <a href="https://drive.google.com/file/d/1c5mUKGX1GQrAe9K8aWKs7XvMgSIdk3-j/view?usp=sharing"
-                            target="_blank" class="card-link hvr-underline-from-center">Demo</a>
-                    </div>
-                </div>
-                <!-- proj6 -->
-                <div class="col-lg-4 col-sm-6 col-md-6 col-sm-1 card">
-                    <div class="card-body">
-                        <p class="card-text text-center">Bamazon CLI</p>
-                    </div>
-                    <div class="hovereffect">
-                        <img class="port-img mx-auto" src="./assets/img/bamazon.jpg">
-                        <div class="overlay">
-                            <div class="text text-center">
-                                <p>Command line app to shop for a list of items.</p>
-                                <p>Node.js, MySQL</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-body text-center">
-                        <a href="https://github.com/jakeD9/bamazon-app" target="_blank"
-                            class="card-link hvr-underline-from-center">GitHub</a>
-                        <a href="https://drive.google.com/file/d/1FPbYte5s_VW4o1jbNcvTxhQcCYzjBShu/view?usp=sharing"
-                            target="_blank" class="card-link hvr-underline-from-center">Demo</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- skills -->
-    <section id="skills">
-        <div class="container">
-            <h2 class="text-center" id="skills-title">Technologies and Skills</h2>
-            <!-- row 1 -->
-            <div class="row first-row-skills" data-aos="fade-up" data-aos-duration="2700">
-                <div class="col-lg-2 col-md-4 text-center">
-                    <div>
-                        <img class="porticon" src="assets/img/icons/html5.png">
-                        <h4>HTML5</h4>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 text-center">
-                    <div>
-                        <img class="porticon" src="assets/img/icons/css3.png">
-                        <h4>CSS</h4>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 text-center">
-                    <div>
-                        <img class="porticon" src="assets/img/icons/bstrap.png">
-                        <h4>Bootstrap</h4>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 text-center">
-                    <div>
-                        <img class="porticon" src="assets/img/icons/js.png">
-                        <h4>JavaScript</h4>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 text-center">
-                    <div>
-                        <img class="porticon" src="assets/img/icons/jquery.png">
-                        <h4>jQuery</h4>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 text-center">
-                    <div>
-                        <img class="porticon" src="assets/img/icons/reactjs.png">
-                        <h4>React</h4>
-                    </div>
-                </div>
-            </div>
-            <!-- row 2 -->
-            <div class="row second-row-skills" data-aos="fade-up" data-aos-duration="2700">
-                <div class="col-lg-2 col-md-4 text-center">
-                    <div>
-                        <img class="porticon" src="assets/img/icons/node.png">
-                        <h4>Node.js</h4>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 text-center">
-                    <div>
-                        <img class="porticon" src="assets/img/icons/restapi.png">
-                        <h4>RESTful API</h4>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 text-center">
-                    <div>
-                        <img class="porticon" src="assets/img/icons/mysql.png">
-                        <h4>MySQL</h4>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 text-center">
-                    <div>
-                        <img class="porticon" src="assets/img/icons/mongo.png">
-                        <h4>MongoDB</h4>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 text-center">
-                    <div>
-                        <img class="porticon" src="assets/img/icons/firebase.png">
-                        <h4>Firebase</h4>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-4 text-center">
-                    <div>
-                        <img class="porticon" src="assets/img/icons/python.png">
-                        <h4>Python</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </nav>
 
-    </section>
-    <!-- footer/contact -->
-    <footer class="footer" id="contact">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 col-md-6" id="about-small">
-                    <img class="float-left" id="headsnip" src="assets/img/portshot.jpg">
-                    <p id="about-snip">Thanks for taking an interest in my site, and my work. I'm an aspiring developer
-                        looking for a fresh
-                        start in a new career path. There's a lot for me to learn out there still, but I'm confident in
-                        my
-                        ability to make something special. If you see something you like, or just want to say hi, please
-                        don't
-                        hesitate to reach out to me using the links over to the right.
-                    </p>
-                    <p>&copy; Copyright 2019</p>
-                </div>
-                <div class="col-lg-5 col-md-6 ml-auto">
-                    <ul style="list-style: none" class="float-right">
-                        <li>
-                            <div class="float-right soc">
-                                <a href="https://www.linkedin.com/in/wduckworth/" target="_blank">
-                                    <h5 class="float-left hvr-underline-from-center">LinkedIn</h5>
-                                </a>
-                                <i class="fab fa-linkedin fa-3x"></i>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="float-right soc">
-                                <a href="https://github.com/jakeD9" target="_blank">
-                                    <h5 class="float-left hvr-underline-from-center">GitHub</h5>
-                                </a>
-                                <i class="fab fa-github-square fa-3x"></i>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="float-right soc">
-                                <a href="mailto:jake.duckworth@gmail.com">
-                                    <h5 class="float-left hvr-underline-from-center">Email</h5>
-                                </a>
-                                <i class="fas fa-envelope-square fa-3x"></i>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="float-right soc">
-                                <h5 class="float-left">573-814-9106</h5>
-                                <i class="fas fa-phone-square fa-3x"></i>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+            <main class="view">
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="assets/script.js"></script>
-    <script>AOS.init()</script>
+                <div class="portfolio" id="portfolio">
+
+                    <div class="portfolio__item">
+                        <figure class="portfolio__picture">
+                            <img src="assets/img/door.jpeg" alt="OpenDoor" class="portfolio__thumb">
+                            <div class="portfolio__links">
+                                <a href="https://github.com/jakeD9/opendoor"><button
+                                        class="portfolio__btn">GitHub</button></a>
+                                <a href="https://evening-savannah-32872.herokuapp.com/"><button
+                                        class="portfolio__btn">Demo</button></a>
+                            </div>
+                        </figure>
+                        <div class="portfolio__detail">
+                            <h2 class="portfolio__title">OpenDoor</h2>
+                            <h3 class="portfolio__type">Full Stack Application</h3>
+                            <p class="portfolio__description">A basic CRM designed to be used by small property owners
+                                who don't need
+                                enterprise solutions to help manage their small amount of properties they may be renting
+                                out.
+                            </p>
+                            <p class="portfolio__description">This was my first project built using React! The hardest
+                                part of this project for me was making sure
+                                that our authentication worked and properly routed the user to the correct page. I
+                                personally handled a lot of the back-end work
+                                dealing with authentication routes, the controller, database design, and making sure our
+                                API talked
+                                to all of the necessary components properly.
+                            </p>
+                            <div class="portfolio__tech">
+                                <img src="assets/img/icons/reactjs.png" alt="React" class="portfolio__tech-item">
+                                <img src="assets/img/icons/node.png" alt="Node" class="portfolio__tech-item">
+                                <img src="assets/img/icons/firebase.png" alt="Firebase" class="portfolio__tech-item">
+                                <img src="assets/img/icons/mysql.png" alt="MySQL" class="portfolio__tech-item">
+                                <img src="assets/img/icons/restapi.png" alt="RESTful architecture"
+                                    class="portfolio__tech-item">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <figure class="portfolio__picture">
+                            <img src="assets/img/discord.jpg" alt="MonoBot" class="portfolio__thumb">
+                            <div class="portfolio__links">
+                                <a href="https://github.com/jakeD9/monobot"><button
+                                        class="portfolio__btn">GitHub</button></a>
+                                <a href="#"><button class="portfolio__btn"><s>No Demo</s></button></a>
+                            </div>
+                        </figure>
+                        <div class="portfolio__detail">
+                            <h2 class="portfolio__title">MonoBot</h2>
+                            <h3 class="portfolio__type">Back-end Application</h3>
+                            <p class="portfolio__description">A Discord bot to help moderate server messages, and keep
+                                tabs on your staff. Also linked
+                                to Google Sheets.
+                            </p>
+                            <p class="portfolio__description">This application was made for a friend who moderates a
+                                Discord server with over 3000 users.
+                                I was asked to create something that could generate a log of moderator activies to a
+                                spreadsheet.
+                                This was my first application built with a <i>massive</i> API, and Google Scripts. It
+                                was also my first
+                                time really diving into project architecture with Node's ability to export specific
+                                batches of code as modules and importing them elsewhere.
+                                I'm really satisfied with how this turned out.
+                            </p>
+                            <div class="portfolio__tech">
+                                <img src="assets/img/icons/node.png" alt="Node" class="portfolio__tech-item">
+                                <img src="assets/img/icons/mongo.png" alt="MongoDB" class="portfolio__tech-item">
+                                <img src="assets/img/icons/discordapi.png" alt="DiscordAPI"
+                                    class="portfolio__tech-item">
+                                <img src="assets/img/icons/js.png" alt="javascript" class="portfolio__tech-item">
+                                <img src="assets/img/icons/googlescripts.png" alt="google scripts"
+                                    class="portfolio__tech-item">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <figure class="portfolio__picture">
+                            <img src="assets/img/explore.jpg" alt="ExploreMore" class="portfolio__thumb">
+                            <div class="portfolio__links">
+                                <a href="https://github.com/jakeD9/explore-more"><button
+                                        class="portfolio__btn">GitHub</button></a>
+                                <a href="https://jaked9.github.io/explore-more/"><button
+                                        class="portfolio__btn">Demo</button></a>
+                            </div>
+                        </figure>
+                        <div class="portfolio__detail">
+                            <h2 class="portfolio__title">Explore More</h2>
+                            <h3 class="portfolio__type">Front-End Application</h3>
+                            <p class="portfolio__description">A basic travel app to help inspire your next vacation or
+                                mini road trip.
+                            </p>
+                            <p class="portfolio__description">Originally my first ever web project, Explore More has
+                                since been refactored
+                                using Sass, vanilla CSS, and new ES6 methods for DOM manipulation. It was a lot of fun
+                                going
+                                back and rewriting the first ever project using new things I've learned. One problem we
+                                always ran into was CORS issues
+                                when trying to talk to certain APIs. After much research and educating myself on web
+                                security, I've made my own "proxy"
+                                server of sorts that handles all third party API requests over HTTPS, just to make
+                                things easier in the future!
+                            </p>
+                            <div class="portfolio__tech">
+                                <img src="assets/img/icons/html5.png" alt="HTML5" class="portfolio__tech-item">
+                                <img src="assets/img/icons/css3.png" alt="HTML5" class="portfolio__tech-item">
+                                <img src="assets/img/icons/js.png" alt="HTML5" class="portfolio__tech-item">
+                                <img src="assets/img/icons/sass.png" alt="HTML5" class="portfolio__tech-item">
+                                <img src="assets/img/icons/restapi.png" alt="HTML5" class="portfolio__tech-item">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <figure class="portfolio__picture">
+                            <img src="assets/img/beer.jpg   " alt="OpenDoor" class="portfolio__thumb">
+                            <div class="portfolio__links">
+                                <a href="https://github.com/jakeD9/beer-me"><button
+                                        class="portfolio__btn">GitHub</button></a>
+                                <a href="https://beer-me-project-2.herokuapp.com/"><button
+                                        class="portfolio__btn">Demo</button></a>
+                            </div>
+                        </figure>
+                        <div class="portfolio__detail">
+                            <h2 class="portfolio__title">Beer Me</h2>
+                            <h3 class="portfolio__type">Full Stack Application</h3>
+                            <p class="portfolio__description">An application for craft beer lovers - allows you to keep
+                                a list of your favorite beers
+                                and update them to your liking.
+                            </p>
+                            <p class="portfolio__description">I'm a big beer fan. There are so many breweries out there
+                                that it's hard to keep track
+                                of which ones are where and which beers I like. This was the first ever full stack
+                                application I had helped write, and my
+                                first crack at a basic authentication system using browser storage. I was mostly in
+                                charge of making sure authentication
+                                worked and setting up our database/API to work properly. This one is next on my list of
+                                projects to refactor a bit with
+                                my newfound knowledge.
+                            </p>
+                            <div class="portfolio__tech">
+                                <img src="assets/img/icons/bstrap.png" alt="Bootstrap" class="portfolio__tech-item">
+                                <img src="assets/img/icons/html5.png" alt="HTML5" class="portfolio__tech-item">
+                                <img src="assets/img/icons/mysql.png" alt="mysql" class="portfolio__tech-item">
+                                <img src="assets/img/icons/firebase.png" alt="firebase" class="portfolio__tech-item">
+                                <img src="assets/img/icons/node.png" alt="node" class="portfolio__tech-item">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <figure class="portfolio__picture">
+                            <img src="assets/img/vinyl.jpeg" alt="LIRI" class="portfolio__thumb">
+                            <div class="portfolio__links">
+                                <a href="https://github.com/jakeD9/liri-node-app"><button
+                                        class="portfolio__btn">GitHub</button></a>
+                                <a href="https://drive.google.com/file/d/1c5mUKGX1GQrAe9K8aWKs7XvMgSIdk3-j/view"><button
+                                        class="portfolio__btn">Demo</button></a>
+                            </div>
+                        </figure>
+                        <div class="portfolio__detail">
+                            <h2 class="portfolio__title">LIRI CLI</h2>
+                            <h3 class="portfolio__type">Back-End Application</h3>
+                            <p class="portfolio__description">A command line tool that can be used to get information on
+                                films, top music, and concerts in the area.
+                            </p>
+
+                            <p class="portfolio__description">The first time I learned how awesome Node was was writing
+                                this little tool. When I first
+                                learned Javascript, I thought I was pretty limited in what I could do since it was all
+                                in browser. Executing Javascript
+                                code on terminal was really eye opening, and was the first time I was able to really
+                                play around with it from a programming
+                                environment. Node is really great for me because it makes writing web applications
+                                simple - the same "do stuff" language is used
+                                on both the front end and the back end of things.
+                            </p>
+                            <div class="portfolio__tech">
+                                <img src="assets/img/icons/node.png" alt="Node" class="portfolio__tech-item">
+                                <img src="assets/img/icons/js.png" alt="" class="portfolio__tech-item">
+                                <img src="assets/img/icons/restapi.png" alt="HTML5" class="portfolio__tech-item">
+                                <!-- <img src="assets/img/icons/html5.png" alt="HTML5" class="portfolio__tech-item">
+                                <img src="assets/img/icons/html5.png" alt="HTML5" class="portfolio__tech-item"> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__item">
+                        <figure class="portfolio__picture">
+                            <img src="assets/img/bamazon.jpg" alt="Bamazon" class="portfolio__thumb">
+                            <div class="portfolio__links">
+                                <a href="https://github.com/jakeD9/bamazon-app"><button
+                                        class="portfolio__btn">GitHub</button></a>
+                                <a href="https://drive.google.com/file/d/1FPbYte5s_VW4o1jbNcvTxhQcCYzjBShu/view"><button
+                                        class="portfolio__btn">Demo</button></a>
+                            </div>
+                        </figure>
+                        <div class="portfolio__detail">
+                            <h2 class="portfolio__title">Bamazon</h2>
+                            <h3 class="portfolio__type">Back-End Application</h3>
+                            <p class="portfolio__description">Mock storefront command line interface built using Node
+                                and MySQL.
+                            </p>
+                            <p class="portfolio__description">Another small Node project, but also was one of my first
+                                little tools made to interface
+                                with MySQL, with persistent data. While small, it was the first time I had been
+                                introduced to working with databases
+                                using Node. It was difficult for me to wrap my head around ORM concepts and writing
+                                queries in a different environment,
+                                but now it's second nature.
+                            </p>
+                            <div class="portfolio__tech">
+                                <img src="assets/img/icons/node.png" alt="Node" class="portfolio__tech-item">
+                                <img src="assets/img/icons/js.png" alt="javascript" class="portfolio__tech-item">
+                                <img src="assets/img/icons/mysql.png" alt="mysql" class="portfolio__tech-item">
+                                <!-- <img src="assets/img/icons/html5.png" alt="HTML5" class="portfolio__tech-item"> -->
+                                <!-- <img src="assets/img/icons/html5.png" alt="HTML5" class="portfolio__tech-item"> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="about hidden" id="about">
+                    <div class="about__head">
+                        <h3 class="about__title">About Jake</h3>
+                        <h4 class="about__subtitle">Budding Web Developer</h4>
+                    </div>
+                    <div class="about__main">
+                        <div class="about__body">
+
+                            <p class="about__text">I'm Jake, a full stack developer in the Kansas City area. I'm an
+                                aspiring developer looking
+                                to make a career change. After working in finance for several years, I wanted to be a
+                                part of the ever growing world
+                                of financial technology, and was bitten by the coding bug in September of 2018. Since
+                                then, I've worked on several
+                                personal projects to further my knowledge, and am taking courses on Python, Java, Vue.js
+                                and others.
+                            </p>
+
+                            <p class="about__text">
+                                I come from a sales background, so I know how important it is to stay on top of things
+                                and be communicative with my team members and clients, no matter the situation. I pride
+                                myself on:
+                            </p>
+
+                            <ul class="about__softskills">
+                                <li class="about__softskills-item">Clean, easy to read code</li>
+                                <li class="about__softskills-item">Beng deadline oriented</li>
+                                <li class="about__softskills-item">A flexible skillset</li>
+                                <li class="about__softskills-item">Team player</li>
+                                <li class="about__softskills-item">Always improving myself</li>
+                                <li class="about__softskills-item">Communication skills</li>
+                            </ul>
+
+                            <p class="about__text">
+                                Currently, I'm in the middle of teaching myself Python and refactoring some older
+                                projects. If you see something
+                                you like, please don't hesitate to reach out to me using the information in the contact
+                                section. I am also accepting
+                                freelance work for small to medium sized projects. Just remember, with enough lines of
+                                code, anything is possible.
+                            </p>
+
+                            <h5 class="about__catch">So let's make something great!</h5>
+                        </div>
+
+                        <img src="assets/img/portshot.jpg" alt="Portrait" class="about__portrait">
+                    </div>
+
+                    <div class="about__second">
+                        <figure class="about__gallery">
+                            <img src="assets/img/IMG_1904.JPG" alt="picture" class="about__photo">
+                            <img src="assets/img/IMG_3073.JPG" alt="picture" class="about__photo">
+                            <img src="assets/img/IMG_3074.JPG" alt="picture" class="about__photo">
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="skills hidden" id="skills">
+                    <div class="skills__container">
+                        <figure class="skills__wrapper">
+                            <img src="assets/img/icons/html5.png" alt="HTML5" class="skills__icon">
+                            <figcaption class="skills__caption">HTML5</figcaption>
+                        </figure>
+                        <figure class="skills__wrapper">
+                            <img src="assets/img/icons/css3.png" alt="CSS" class="skills__icon">
+                            <figcaption class="skills__caption">CSS3</figcaption>
+                        </figure>
+                        <figure class="skills__wrapper">
+                            <img src="assets/img/icons/js.png" alt="JavaScript" class="skills__icon">
+                            <figcaption class="skills__caption">JavaScript & ES6</figcaption>
+                        </figure>
+                        <figure class="skills__wrapper">
+                            <img src="assets/img/icons/jquery.png" alt="jQuery" class="skills__icon">
+                            <figcaption class="skills__caption">jQuery</figcaption>
+                        </figure>
+                        <figure class="skills__wrapper">
+                            <img src="assets/img/icons/reactjs.png" alt="React" class="skills__icon">
+                            <figcaption class="skills__caption">React</figcaption>
+                        </figure>
+                        <figure class="skills__wrapper">
+                            <img src="assets/img/icons/node.png" alt="Node.js/Express" class="skills__icon">
+                            <figcaption class="skills__caption">Node</figcaption>
+                        </figure>
+                        <figure class="skills__wrapper">
+                            <img src="assets/img/icons/bstrap.png" alt="Bootstrap" class="skills__icon">
+                            <figcaption class="skills__caption">Bootstrap</figcaption>
+                        </figure>
+                        <figure class="skills__wrapper">
+                            <img src="assets/img/icons/mysql.png" alt="SQL" class="skills__icon">
+                            <figcaption class="skills__caption">SQL</figcaption>
+                        </figure>
+                        <figure class="skills__wrapper">
+                            <img src="assets/img/icons/mongo.png" alt="MongoDB" class="skills__icon">
+                            <figcaption class="skills__caption">MongoDB</figcaption>
+                        </figure>
+                        <figure class="skills__wrapper">
+                            <img src="assets/img/icons/firebase.png" alt="Firebase" class="skills__icon">
+                            <figcaption class="skills__caption">Firebase</figcaption>
+                        </figure>
+                        <figure class="skills__wrapper">
+                            <img src="assets/img/icons/restapi.png" alt="RESTful" class="skills__icon">
+                            <figcaption class="skills__caption">RESTful APIs</figcaption>
+                        </figure>
+                        <figure class="skills__wrapper">
+                            <img src="assets/img/icons/sass.png" alt="Sass" class="skills__icon">
+                            <figcaption class="skills__caption">Sass</figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <div class="contact hidden" id="contact">
+                    <div class="contact__container">
+                        <div class="contact__header">
+                            <h3 class="contact__title">Thanks for taking an interest in my site, and my work!</h3>
+                            <h4 class="contact__subtitle">I'm currently doing small freelance projects while hunting
+                                down my first full-time developer position.**</h4>
+                            <h4 class="contact__subtitle">If you are interested in freelance work, please use Upwork or
+                                my dedicated freelance email.</h4>
+                        </div>
+
+                        <ul class="contact__list">
+                            <li class="contact__list-item">
+                                <a href="mailto:jake.duckworth@gmail.com" class="contact__link">
+                                    <svg class="contact__icon">
+                                        <use xlink:href="assets/img/symbol-defs.svg#icon-gmail"></use>
+                                    </svg>
+                                    <span>Gmail</span>
+                                </a>
+                            </li>
+                            <li class="contact__list-item">
+                                <a href="mailto:duckworth.jake@outlook.com" class="contact__link">
+                                    <svg class="contact__icon">
+                                        <use xlink:href="assets/img/symbol-defs.svg#icon-gmail"></use>
+                                    </svg>
+                                    <span>Freelance</span>
+                                </a>
+                            </li>
+                            <li class="contact__list-item">
+                                <a href="https://github.com/jakeD9" target="_blank" class="contact__link">
+                                    <svg class="contact__icon">
+                                        <use xlink:href="assets/img/symbol-defs.svg#icon-github"></use>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                            </li>
+                            <li class="contact__list-item">
+                                <a href="https://www.linkedin.com/in/wduckworth/" target="_blank" class="contact__link">
+                                    <svg class="contact__icon">
+                                        <use xlink:href="assets/img/symbol-defs.svg#icon-linkedin"></use>
+                                    </svg>
+                                    <span>LinkedIn</span>
+                                </a>
+                            </li>
+                            <li class="contact__list-item">
+                                <a href="https://www.upwork.com/freelancers/~0124d2154c996bd287" target="_blank"
+                                    class="contact__link">
+                                    <svg class="contact__icon">
+                                        <use xlink:href="assets/img/symbol-defs.svg#icon-upwork"></use>
+                                    </svg>
+                                    <span>Upwork</span>
+                                </a>
+                            </li>
+                            <li class="contact__list-item">
+                                <a href="#" class="contact__link">
+                                    <svg class="contact__icon">
+                                        <use xlink:href="assets/img/symbol-defs.svg#icon-phone"></use>
+                                    </svg>
+                                    <span>573.814.9106</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="contact__reference">
+                            **seeking opportunities in the greater Kansas City or greater Denver areas
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+    </div>
+
+    <script src="assets/main.js" async defer></script>
 </body>
 
 </html>
