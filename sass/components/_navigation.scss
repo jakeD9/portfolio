@@ -1,0 +1,76 @@
+.side-nav {
+    font-size: 1.5rem;
+    list-style: none;
+    margin-top: 3.5rem;
+
+    &__item {
+        position: relative;
+        
+
+        &:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+    }
+
+    @keyframes AnimateBG {
+        0%{background-position: 0% 40%}
+        50%{background-position: 100% 61%}
+        100%{background-position: 0% 41%}
+    }
+
+    &__item:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background: var(--colorful-gradient);
+        background-size: 600% 600%;
+        animation: AnimateBG 60s ease infinite;
+        transform: scaleY(0);
+        transition: transform .2s,
+                    width .4s cubic-bezier(1, 0, 0, 1) .2s,
+                    background-color .1s;
+    }
+
+    &__item:hover::before,
+    &__item--active::before {
+        transform: scaleY(1);
+        width: 100%;
+        animation: AnimateBG 60s ease infinite;
+    }
+
+    &__item:active::before {
+        background-color: var(--colorful-gradient);
+        animation: AnimateBG 60s ease infinite;
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: var(--color-white-muted);
+        text-decoration: none;
+        text-transform: uppercase;
+        display: block;
+        padding: 1.5rem 3rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+        margin-right: 2rem;
+        fill: currentColor;
+    }
+}
+
+.reference {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2.5rem;
+    color: var(--color-white-muted);
+
+}

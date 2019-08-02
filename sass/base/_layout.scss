@@ -1,0 +1,38 @@
+.container {
+    max-width: 120rem;
+    margin: 6rem auto;
+    background-color: var(--color-grey-light);
+    box-shadow: var(--shadow-dark);
+    min-height: 80rem;
+}
+
+.header {
+    font-size: 1.5rem;
+    height: 7rem;
+    background-color: white;
+    border-bottom: var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--color-grey-dark-3);
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.view {
+    background-color: var(--color-grey-light);
+    flex: 1;
+
+    &:last-child {
+        margin-bottom: 5rem;
+    }
+}
