@@ -27,6 +27,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -43,6 +46,11 @@ body {
   background-color: var(--color-grey-light);
   box-shadow: var(--shadow-dark);
   min-height: 80rem; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0;
+      max-width: 100%;
+      width: 100%; } }
 
 .header {
   font-size: 1.5rem;
@@ -52,9 +60,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media only screen and (max-width: 68.75em) {
+    .header {
+      flex-wrap: wrap;
+      height: 11rem;
+      align-content: space-around; } }
 
 .content {
   display: flex; }
+  @media only screen and (max-width: 56.25em) {
+    .content {
+      flex-direction: column; } }
 
 .sidebar {
   background-color: var(--color-grey-dark-3);
@@ -103,8 +119,9 @@ body {
   .scrobble__icon {
     height: 3rem;
     width: 3rem; }
-  .scrobble__icon--nowplaying {
-    animation: NowPlaying 2s ease infinite; }
+  @media only screen and (max-width: 37.5em) {
+    .scrobble {
+      display: none; } }
 
 @keyframes NowPlaying {
   0% {
@@ -124,10 +141,24 @@ body {
   font-size: 1.5rem;
   list-style: none;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .side-nav {
+      display: flex;
+      flex-flow: wrap;
+      margin: 0; } }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
       margin-bottom: .5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .side-nav__item:not(:last-child) {
+          margin: 0; } }
+    @media only screen and (max-width: 56.25em) {
+      .side-nav__item {
+        flex: 0 0 33.33%; } }
+    @media only screen and (max-width: 31.25em) {
+      .side-nav__item {
+        flex: 0 0 50%; } }
 
 @keyframes AnimateBG {
   0% {
@@ -176,6 +207,9 @@ body {
   text-align: center;
   padding: 2.5rem;
   color: var(--color-white-muted); }
+  @media only screen and (max-width: 56.25em) {
+    .reference {
+      display: none !important; } }
 
 .portfolio {
   display: flex;
@@ -186,8 +220,11 @@ body {
     padding: 2rem;
     margin: 5rem 5rem 0 5rem;
     background-color: var(--color-white-muted);
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     box-shadow: var(--shadow-light); }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__item {
+        flex-direction: column-reverse; } }
   .portfolio__picture {
     display: flex;
     flex-direction: column;
@@ -196,14 +233,21 @@ body {
     display: block;
     width: 30rem;
     height: 30rem;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     border: 2px solid var(--color-grey-light);
     flex: 1 0 35%; }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__thumb {
+        flex: 0; } }
   .portfolio__links {
     margin-top: 2rem;
     width: 100%;
     display: flex;
     justify-content: space-around; }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__links {
+        justify-content: center;
+        margin: 2rem; } }
   .portfolio__btn {
     cursor: pointer;
     border: none;
@@ -211,6 +255,9 @@ body {
     font-size: 1.4rem;
     border-bottom: 1px solid currentColor;
     background-color: transparent; }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__btn {
+        margin: 0 4rem; } }
   .portfolio__detail {
     color: var(--color-grey-dark-1);
     display: flex;
@@ -229,13 +276,19 @@ body {
     font-size: 1.3rem;
     margin-left: 2rem;
     margin-right: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__description {
+        margin-bottom: 1.5rem; } }
   .portfolio__tech {
     display: flex;
     justify-content: center; }
     .portfolio__tech > img {
       height: 4rem;
       width: 4rem;
-      margin: 0 .7rem; }
+      margin: 0 0.7rem; }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__tech {
+        margin: 2rem; } }
 
 .about {
   display: flex;
@@ -258,8 +311,11 @@ body {
     display: flex;
     margin: 5rem;
     background-color: var(--color-white-muted);
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     box-shadow: var(--shadow-light); }
+    @media only screen and (max-width: 37.5em) {
+      .about__main {
+        flex-direction: column-reverse; } }
   .about__body {
     font-size: 1.4rem;
     color: var(--color-grey-dark-1);
@@ -271,10 +327,11 @@ body {
     margin: 2rem 0;
     padding: 3rem 0;
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    align-content: center; }
     .about__softskills-item {
       flex: 0 0 50%;
-      margin-bottom: .5rem; }
+      margin-bottom: 0.5rem; }
       .about__softskills-item:before {
         content: "";
         display: inline-block;
@@ -292,23 +349,36 @@ body {
     box-sizing: content-box;
     margin-right: 4rem;
     margin-top: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__portrait {
+        width: 13rem;
+        margin-right: 0;
+        margin-top: 2rem;
+        align-self: center; } }
   .about__catch {
     margin: 0 auto;
     font-size: 1.5rem;
     padding-bottom: 1.1rem;
     text-align: center;
     transform: translateX(14%); }
+    @media only screen and (max-width: 37.5em) {
+      .about__catch {
+        transform: translateX(0); } }
   .about__second {
     display: flex;
     background-color: var(--color-white-muted);
     margin: 0 5rem;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     box-shadow: var(--shadow-light);
     justify-content: space-between; }
   .about__gallery {
     flex: 1;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 31.25em) {
+      .about__gallery {
+        flex-direction: column;
+        align-items: center; } }
   .about__photo {
     height: auto;
     width: 15rem;
@@ -324,6 +394,9 @@ body {
     margin: 5rem;
     box-shadow: var(--shadow-light);
     border-radius: 4px; }
+    @media only screen and (max-width: 56.25em) {
+      .skills__container {
+        justify-content: center; } }
   .skills__wrapper {
     display: flex;
     flex-direction: column;
@@ -335,6 +408,10 @@ body {
     height: 13rem;
     width: 13rem;
     align-self: center; }
+    @media only screen and (max-width: 37.5em) {
+      .skills__icon {
+        height: 6rem;
+        width: 6rem; } }
   .skills__caption {
     text-align: center;
     color: var(--color-grey-dark-1);

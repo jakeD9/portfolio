@@ -3,12 +3,30 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @media only screen and (max-width: $screen-medium) {
+        display: flex;
+        flex-flow: wrap;    
+        margin: 0;
+    }
+
     &__item {
         position: relative;
         
 
         &:not(:last-child) {
             margin-bottom: .5rem;
+
+            @media only screen and (max-width: $screen-medium) {
+                margin: 0;
+            }
+        }
+
+        @media only screen and (max-width: $screen-medium) {
+            flex: 0 0 33.33%;
+        }
+
+        @media only screen and (max-width: $screen-smallest) {
+            flex: 0 0 50%;
         }
     }
 
@@ -73,4 +91,7 @@
     padding: 2.5rem;
     color: var(--color-white-muted);
 
+    @media only screen and (max-width: $screen-medium) {
+        display: none !important;
+    }
 }

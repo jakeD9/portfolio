@@ -14,7 +14,10 @@
   --line: 1px solid var(--color-grey-light);
 
   --colorful-gradient: linear-gradient(305deg, #FF595E, #FFBE6C, #96BC3C, #0188A4, #FB6107, #9FD8CB);
-  
-
-  
 }
+
+$screen-largest: 75em; //1200px
+$screen-large: 68.75em; //1100px
+$screen-medium: 56.25em; //900px
+$screen-small: 37.5em; //600px;
+$screen-smallest: 31.25em; //500px

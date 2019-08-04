@@ -49,8 +49,14 @@
     }
 
     &__icon--nowplaying {
-        animation: NowPlaying 2s ease infinite;
+        // animation: NowPlaying 2s ease infinite;
     }
+
+    @media only screen and (max-width: $screen-small) {
+        display: none;
+    }
+
+    
 }
 
 @keyframes NowPlaying {
