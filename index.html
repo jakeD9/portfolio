@@ -32,7 +32,8 @@
                     <span class="scrobble__small" id="nowPlaying">I'm currently listening to:</span>
                     <div class="scrobble__track" id="scrobbleTrack"></div>
                 </div>
-                <a href="https://open.spotify.com/user/1264639257?si=23Ffp2ZJSJatHOAKcCNZtA" target="_blank" id="scrobbleLink">
+                <a href="https://open.spotify.com/user/1264639257?si=23Ffp2ZJSJatHOAKcCNZtA" target="_blank"
+                    id="scrobbleLink">
                     <svg class="scrobble__icon" id="scrobbeIcon">
                         <use xlink:href="assets/img/symbol-defs.svg#icon-spotify"></use>
                     </svg>
@@ -98,7 +99,7 @@
                 </ul>
 
                 <div class="reference">
-                    Last Update: 08/01/2019
+                    Last Update: 08/28/2019
                     <br>
                     Icons provided by IcoMoon
                     <br>
@@ -109,6 +110,45 @@
             <main class="view">
 
                 <div class="portfolio" id="portfolio">
+
+                    <div class="portfolio__item">
+                        <figure class="portfolio__picture">
+                            <img src="assets/img/beer.jpg   " alt="OpenDoor" class="portfolio__thumb">
+                            <div class="portfolio__links">
+                                <a href="https://github.com/jakeD9/beer-me-v2" target="_blank"><button
+                                        class="portfolio__btn">GitHub</button></a>
+                                <a href="https://afternoon-dusk-20320.herokuapp.com/" target="_blank"><button
+                                        class="portfolio__btn">Demo</button></a>
+                            </div>
+                        </figure>
+                        <div class="portfolio__detail">
+                            <h2 class="portfolio__title">Beer Me</h2>
+                            <h3 class="portfolio__type">Full Stack Application (MERN)</h3>
+                            <p class="portfolio__description">An application for craft beer lovers - allows you to keep
+                                a list of your favorite beers
+                                and update them to your liking.
+                            </p>
+                            <p class="portfolio__description">Recently refactored - BeerMe has been rebuilt using React
+                                and
+                                Material UI. I wanted to put my knowledge of React to the test and get comfortable using
+                                Hooks.
+                                I'm not a UI designer, and Material UI looked like a very flexible library that I could
+                                add to my
+                                list of useful tricks to learn. I also got my hands dirty and built out authentication
+                                from scratch
+                                instead of relying on Firebase integration as I've done in the past. It was nice to go
+                                back and breathe
+                                life into an application that I wasn't satisfied with originally.
+                            </p>
+                            <div class="portfolio__tech">
+                                <img src="assets/img/icons/reactjs.png" alt="Bootstrap" class="portfolio__tech-item">
+                                <img src="assets/img/icons/materialui.png" alt="HTML5" class="portfolio__tech-item">
+                                <img src="assets/img/icons/mongo.png" alt="mysql" class="portfolio__tech-item">
+                                <img src="assets/img/icons/restapi.png" alt="firebase" class="portfolio__tech-item">
+                                <img src="assets/img/icons/node.png" alt="node" class="portfolio__tech-item">
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="portfolio__item">
                         <figure class="portfolio__picture">
@@ -141,11 +181,51 @@
                                 <img src="assets/img/icons/node.png" alt="Node" class="portfolio__tech-item">
                                 <img src="assets/img/icons/firebase.png" alt="Firebase" class="portfolio__tech-item">
                                 <img src="assets/img/icons/mysql.png" alt="MySQL" class="portfolio__tech-item">
-                                <img src="assets/img/icons/restapi.png" alt="RESTful architecture"
-                                    class="portfolio__tech-item">
+                                <img src="assets/img/icons/restapi.png" alt="RESTful architecture"class="portfolio__tech-item">
                             </div>
                         </div>
                     </div>
+
+
+
+                    <div class="portfolio__item">
+                        <figure class="portfolio__picture">
+                            <img src="assets/img/explore.jpg" alt="ExploreMore" class="portfolio__thumb">
+                            <div class="portfolio__links">
+                                <a href="https://github.com/jakeD9/explore-more" target="_blank"><button
+                                        class="portfolio__btn">GitHub</button></a>
+                                <a href="https://jaked9.github.io/explore-more/" target="_blank"><button
+                                        class="portfolio__btn">Demo</button></a>
+                            </div>
+                        </figure>
+                        <div class="portfolio__detail">
+                            <h2 class="portfolio__title">Explore More</h2>
+                            <h3 class="portfolio__type">Front-End Application (SPA)</h3>
+                            <p class="portfolio__description">A basic travel app to help inspire your next vacation or
+                                mini road trip.
+                            </p>
+                            <p class="portfolio__description">Originally my first ever web project, Explore More has
+                                since been refactored
+                                using SCSS and ES+ for DOM manipulation. It was a lot of fun
+                                going
+                                back and rewriting the first ever project using new things I've learned. One problem we
+                                always ran into was CORS issues
+                                when trying to talk to certain APIs. After much research and educating myself on web
+                                security, I've made my own "proxy"
+                                server of sorts that handles all third party API requests over HTTPS, just to make
+                                things easier in the future!
+                            </p>
+                            <div class="portfolio__tech">
+                                <img src="assets/img/icons/html5.png" alt="HTML5" class="portfolio__tech-item">
+                                <img src="assets/img/icons/css3.png" alt="HTML5" class="portfolio__tech-item">
+                                <img src="assets/img/icons/js.png" alt="HTML5" class="portfolio__tech-item">
+                                <img src="assets/img/icons/sass.png" alt="HTML5" class="portfolio__tech-item">
+                                <img src="assets/img/icons/restapi.png" alt="HTML5" class="portfolio__tech-item">
+                            </div>
+                        </div>
+                    </div>
+
+
 
                     <div class="portfolio__item">
                         <figure class="portfolio__picture">
@@ -187,86 +267,12 @@
 
                     <div class="portfolio__item">
                         <figure class="portfolio__picture">
-                            <img src="assets/img/explore.jpg" alt="ExploreMore" class="portfolio__thumb">
-                            <div class="portfolio__links">
-                                <a href="https://github.com/jakeD9/explore-more" target="_blank"><button
-                                        class="portfolio__btn">GitHub</button></a>
-                                <a href="https://jaked9.github.io/explore-more/" target="_blank"><button
-                                        class="portfolio__btn">Demo</button></a>
-                            </div>
-                        </figure>
-                        <div class="portfolio__detail">
-                            <h2 class="portfolio__title">Explore More</h2>
-                            <h3 class="portfolio__type">Front-End Application</h3>
-                            <p class="portfolio__description">A basic travel app to help inspire your next vacation or
-                                mini road trip.
-                            </p>
-                            <p class="portfolio__description">Originally my first ever web project, Explore More has
-                                since been refactored
-                                using Sass, vanilla CSS, and new ES6 methods for DOM manipulation. It was a lot of fun
-                                going
-                                back and rewriting the first ever project using new things I've learned. One problem we
-                                always ran into was CORS issues
-                                when trying to talk to certain APIs. After much research and educating myself on web
-                                security, I've made my own "proxy"
-                                server of sorts that handles all third party API requests over HTTPS, just to make
-                                things easier in the future!
-                            </p>
-                            <div class="portfolio__tech">
-                                <img src="assets/img/icons/html5.png" alt="HTML5" class="portfolio__tech-item">
-                                <img src="assets/img/icons/css3.png" alt="HTML5" class="portfolio__tech-item">
-                                <img src="assets/img/icons/js.png" alt="HTML5" class="portfolio__tech-item">
-                                <img src="assets/img/icons/sass.png" alt="HTML5" class="portfolio__tech-item">
-                                <img src="assets/img/icons/restapi.png" alt="HTML5" class="portfolio__tech-item">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__item">
-                        <figure class="portfolio__picture">
-                            <img src="assets/img/beer.jpg   " alt="OpenDoor" class="portfolio__thumb">
-                            <div class="portfolio__links">
-                                <a href="https://github.com/jakeD9/beer-me" target="_blank"><button
-                                        class="portfolio__btn">GitHub</button></a>
-                                <a href="https://beer-me-project-2.herokuapp.com/" target="_blank"><button
-                                        class="portfolio__btn">Demo</button></a>
-                            </div>
-                        </figure>
-                        <div class="portfolio__detail">
-                            <h2 class="portfolio__title">Beer Me</h2>
-                            <h3 class="portfolio__type">Full Stack Application</h3>
-                            <p class="portfolio__description">An application for craft beer lovers - allows you to keep
-                                a list of your favorite beers
-                                and update them to your liking.
-                            </p>
-                            <p class="portfolio__description">I'm a big beer fan. There are so many breweries out there
-                                that it's hard to keep track
-                                of which ones are where and which beers I like. This was the first ever full stack
-                                application I had helped write, and my
-                                first crack at a basic authentication system using browser storage. I was mostly in
-                                charge of making sure authentication
-                                worked and setting up our database/API to work properly. This one is next on my list of
-                                projects to refactor a bit with
-                                my newfound knowledge.
-                            </p>
-                            <div class="portfolio__tech">
-                                <img src="assets/img/icons/bstrap.png" alt="Bootstrap" class="portfolio__tech-item">
-                                <img src="assets/img/icons/html5.png" alt="HTML5" class="portfolio__tech-item">
-                                <img src="assets/img/icons/mysql.png" alt="mysql" class="portfolio__tech-item">
-                                <img src="assets/img/icons/firebase.png" alt="firebase" class="portfolio__tech-item">
-                                <img src="assets/img/icons/node.png" alt="node" class="portfolio__tech-item">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__item">
-                        <figure class="portfolio__picture">
                             <img src="assets/img/vinyl.jpeg" alt="LIRI" class="portfolio__thumb">
                             <div class="portfolio__links">
                                 <a href="https://github.com/jakeD9/liri-node-app" target="_blank"><button
                                         class="portfolio__btn">GitHub</button></a>
-                                <a href="https://drive.google.com/file/d/1c5mUKGX1GQrAe9K8aWKs7XvMgSIdk3-j/view" target="_blank"><button
-                                        class="portfolio__btn">Demo</button></a>
+                                <a href="https://drive.google.com/file/d/1c5mUKGX1GQrAe9K8aWKs7XvMgSIdk3-j/view"
+                                    target="_blank"><button class="portfolio__btn">Demo</button></a>
                             </div>
                         </figure>
                         <div class="portfolio__detail">
@@ -292,40 +298,6 @@
                                 <img src="assets/img/icons/restapi.png" alt="HTML5" class="portfolio__tech-item">
                                 <!-- <img src="assets/img/icons/html5.png" alt="HTML5" class="portfolio__tech-item">
                                 <img src="assets/img/icons/html5.png" alt="HTML5" class="portfolio__tech-item"> -->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__item">
-                        <figure class="portfolio__picture">
-                            <img src="assets/img/bamazon.jpg" alt="Bamazon" class="portfolio__thumb">
-                            <div class="portfolio__links">
-                                <a href="https://github.com/jakeD9/bamazon-app" target="_blank"><button
-                                        class="portfolio__btn">GitHub</button></a>
-                                <a href="https://drive.google.com/file/d/1FPbYte5s_VW4o1jbNcvTxhQcCYzjBShu/view" target="_blank"><button
-                                        class="portfolio__btn">Demo</button></a>
-                            </div>
-                        </figure>
-                        <div class="portfolio__detail">
-                            <h2 class="portfolio__title">Bamazon</h2>
-                            <h3 class="portfolio__type">Back-End Application</h3>
-                            <p class="portfolio__description">Mock storefront command line interface built using Node
-                                and MySQL.
-                            </p>
-                            <p class="portfolio__description">Another small Node project, but also was one of my first
-                                little tools made to interface
-                                with MySQL, with persistent data. While small, it was the first time I had been
-                                introduced to working with databases
-                                using Node. It was difficult for me to wrap my head around ORM concepts and writing
-                                queries in a different environment,
-                                but now it's second nature.
-                            </p>
-                            <div class="portfolio__tech">
-                                <img src="assets/img/icons/node.png" alt="Node" class="portfolio__tech-item">
-                                <img src="assets/img/icons/js.png" alt="javascript" class="portfolio__tech-item">
-                                <img src="assets/img/icons/mysql.png" alt="mysql" class="portfolio__tech-item">
-                                <!-- <img src="assets/img/icons/html5.png" alt="HTML5" class="portfolio__tech-item"> -->
-                                <!-- <img src="assets/img/icons/html5.png" alt="HTML5" class="portfolio__tech-item"> -->
                             </div>
                         </div>
                     </div>
@@ -365,7 +337,8 @@
                             </ul>
 
                             <p class="about__text">
-                                Currently, I'm in the middle of teaching myself Python and React Native while refactoring some older
+                                Currently, I'm in the middle of teaching myself Python and React Native while
+                                refactoring some older
                                 projects. If you see something
                                 you like, please don't hesitate to reach out to me using the information in the contact
                                 section. I am also accepting
@@ -437,7 +410,11 @@
                         </figure>
                         <figure class="skills__wrapper">
                             <img src="assets/img/icons/sass.png" alt="Sass" class="skills__icon">
-                            <figcaption class="skills__caption">Sass</figcaption>
+                            <figcaption class="skills__caption">Sass/SCSS</figcaption>
+                        </figure>
+                        <figure class="skills__wrapper">
+                            <img src="assets/img/icons/materialui.png" alt="Material UI" class="skills__icon">
+                            <figcaption class="skills__caption">Sass/SCSS</figcaption>
                         </figure>
                     </div>
 
